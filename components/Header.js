@@ -1,18 +1,15 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-const Header = ( ) => {
-    
-    useEffect(() => {
-        setInterval(() => {
-        console.log("Hello");
-        }, 1000);
-    },[])
-
-    return(
-    <div >
-        This is header
-    </div>
-    )
-}
+const Header = () => {
+  
+  return (
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/contact">Contact</Link>
+    </nav>
+  );
+};
 
 export default Header;
